@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		54318C861BA04D5100A16E21 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54318C851BA04D5100A16E21 /* main.cpp */; };
+		54C8279B1BA13D3200651BBB /* FBXLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54C827991BA13D3200651BBB /* FBXLoader.cpp */; };
+		54C8279E1BA13D3A00651BBB /* targa.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 54C8279C1BA13D3A00651BBB /* targa.cxx */; };
+		54C827A11BA165CB00651BBB /* libfbxsdk.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C8279F1BA165CB00651BBB /* libfbxsdk.dylib */; };
+		54C827A21BA165CB00651BBB /* libfbxsdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C827A01BA165CB00651BBB /* libfbxsdk.a */; };
+		54C827A41BA1685B00651BBB /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C827A31BA1685B00651BBB /* OpenGL.framework */; };
+		54C827A61BA16C8100651BBB /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C827A51BA16C8100651BBB /* GLUT.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +31,14 @@
 /* Begin PBXFileReference section */
 		54318C821BA04D5100A16E21 /* fbxLoader */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = fbxLoader; sourceTree = BUILT_PRODUCTS_DIR; };
 		54318C851BA04D5100A16E21 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		54C827991BA13D3200651BBB /* FBXLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FBXLoader.cpp; sourceTree = "<group>"; };
+		54C8279A1BA13D3200651BBB /* FBXLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBXLoader.h; sourceTree = "<group>"; };
+		54C8279C1BA13D3A00651BBB /* targa.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = targa.cxx; sourceTree = "<group>"; };
+		54C8279D1BA13D3A00651BBB /* targa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = targa.h; sourceTree = "<group>"; };
+		54C8279F1BA165CB00651BBB /* libfbxsdk.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfbxsdk.dylib; path = ../../../../../Applications/Autodesk/FBX_SDK/2016.1.1/lib/clang/debug/libfbxsdk.dylib; sourceTree = "<group>"; };
+		54C827A01BA165CB00651BBB /* libfbxsdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfbxsdk.a; path = ../../../../../Applications/Autodesk/FBX_SDK/2016.1.1/lib/clang/debug/libfbxsdk.a; sourceTree = "<group>"; };
+		54C827A31BA1685B00651BBB /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		54C827A51BA16C8100651BBB /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +46,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54C827A61BA16C8100651BBB /* GLUT.framework in Frameworks */,
+				54C827A41BA1685B00651BBB /* OpenGL.framework in Frameworks */,
+				54C827A11BA165CB00651BBB /* libfbxsdk.dylib in Frameworks */,
+				54C827A21BA165CB00651BBB /* libfbxsdk.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +59,10 @@
 		54318C791BA04D5100A16E21 = {
 			isa = PBXGroup;
 			children = (
+				54C827A51BA16C8100651BBB /* GLUT.framework */,
+				54C827A31BA1685B00651BBB /* OpenGL.framework */,
+				54C8279F1BA165CB00651BBB /* libfbxsdk.dylib */,
+				54C827A01BA165CB00651BBB /* libfbxsdk.a */,
 				54318C841BA04D5100A16E21 /* fbxLoader */,
 				54318C831BA04D5100A16E21 /* Products */,
 			);
@@ -57,7 +79,11 @@
 		54318C841BA04D5100A16E21 /* fbxLoader */ = {
 			isa = PBXGroup;
 			children = (
+				54C827991BA13D3200651BBB /* FBXLoader.cpp */,
+				54C8279A1BA13D3200651BBB /* FBXLoader.h */,
 				54318C851BA04D5100A16E21 /* main.cpp */,
+				54C8279C1BA13D3A00651BBB /* targa.cxx */,
+				54C8279D1BA13D3A00651BBB /* targa.h */,
 			);
 			path = fbxLoader;
 			sourceTree = "<group>";
@@ -119,6 +145,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				54318C861BA04D5100A16E21 /* main.cpp in Sources */,
+				54C8279B1BA13D3200651BBB /* FBXLoader.cpp in Sources */,
+				54C8279E1BA13D3A00651BBB /* targa.cxx in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +233,15 @@
 		54318C8A1BA04D5100A16E21 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LIBRARY = "libc++";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/Applications/Autodesk/FBX_SDK/2016.1.1/include,
+				);
+				LD_RUNPATH_SEARCH_PATHS = /Applications/Autodesk/FBX_SDK/2016.1.1/lib/clang/debug;
+				LIBRARY_SEARCH_PATHS = /Applications/Autodesk/FBX_SDK/2016.1.1/lib/clang/debug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -212,6 +249,9 @@
 		54318C8B1BA04D5100A16E21 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LIBRARY = "libc++";
+				LIBRARY_SEARCH_PATHS = /Applications/Autodesk/FBX_SDK/2016.1.1/lib/clang/release;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -235,6 +275,7 @@
 				54318C8B1BA04D5100A16E21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
